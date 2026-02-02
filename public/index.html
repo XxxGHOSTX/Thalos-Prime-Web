@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thalos Prime - Synthetic Biological Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h1>🧠 Thalos Prime</h1>
+        <p class="subtitle">Synthetic Biological Intelligence Platform</p>
+        <p class="copyright">Copyright © 2026 Tony Ray Macier III</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="status-panel">
+        <div class="status-item">
+          <span class="status-label">System Status:</span>
+          <span class="status-value" id="systemStatus">Initializing...</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Organoid Models:</span>
+          <span class="status-value" id="organoidCount">-</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Total Neurons:</span>
+          <span class="status-value" id="neuronCount">-</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Queries Processed:</span>
+          <span class="status-value" id="queryCount">-</span>
+        </div>
+      </div>
+
+      <div class="neural-visualization">
+        <canvas id="neuralCanvas"></canvas>
+        <div class="neural-info">
+          <div class="neural-metric">
+            <span>Neural Activation</span>
+            <div class="metric-bar">
+              <div class="metric-fill" id="activationBar"></div>
+            </div>
+            <span id="activationValue">0%</span>
+          </div>
+          <div class="neural-metric">
+            <span>Network Coherence</span>
+            <div class="metric-bar">
+              <div class="metric-fill" id="coherenceBar"></div>
+            </div>
+            <span id="coherenceValue">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="interaction-panel">
+        <div class="chat-history" id="chatHistory">
+          <div class="welcome-message">
+            <h3>Welcome to Thalos Prime</h3>
+            <p>I am an AI platform powered by Synthetic Biological Intelligence (SBI) using organoid-based neural models. I can:</p>
+            <ul>
+              <li>Respond to natural language queries</li>
+              <li>Perform complex mathematical computations</li>
+              <li>Demonstrate bio-inspired neural processing</li>
+              <li>Provide real-time interactive responses</li>
+            </ul>
+            <p><strong>Try asking me:</strong></p>
+            <ul>
+              <li>"What are your capabilities?"</li>
+              <li>"Calculate 123 * 456 + 789"</li>
+              <li>"How do your organoid models work?"</li>
+              <li>Or any other question!</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <input 
+            type="text" 
+            id="queryInput" 
+            placeholder="Ask me anything... (e.g., 'What can you do?' or '25 * 4 + 100')"
+            autocomplete="off"
+          >
+          <button id="sendButton">Send</button>
+        </div>
+      </div>
+
+      <div class="info-panel">
+        <h3>About Thalos Prime</h3>
+        <p>
+          Thalos Prime integrates machine learning with synthetic bio-engineering principles. 
+          The system uses multiple organoid-based neural models that simulate biological neural 
+          networks for advanced AI processing.
+        </p>
+        <div class="capabilities-grid">
+          <div class="capability-card">
+            <div class="capability-icon">🧬</div>
+            <h4>Bio-Inspired</h4>
+            <p>Organoid neural models</p>
+          </div>
+          <div class="capability-card">
+            <div class="capability-icon">🔬</div>
+            <h4>Advanced Processing</h4>
+            <p>Synthetic biological intelligence</p>
+          </div>
+          <div class="capability-card">
+            <div class="capability-icon">⚡</div>
+            <h4>Real-Time</h4>
+            <p>Instant responses via WebSocket</p>
+          </div>
+          <div class="capability-card">
+            <div class="capability-icon">🎯</div>
+            <h4>Adaptive</h4>
+            <p>Learning neural networks</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Thalos Prime v1.0.0 | Powered by Synthetic Biological Intelligence</p>
+      <p>Copyright © 2026 Tony Ray Macier III | All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
